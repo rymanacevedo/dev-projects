@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "dev-projects:build"
+            "browserTarget": "dev-projects:build",
+            "port": 3000
           },
           "configurations": {
             "production": {
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "dev-projects"
+    }
+  },
+  "defaultProject": "dev-projects",
+  "cli": {
+    "analytics": false
+  }
 }
