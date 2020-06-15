@@ -2,8 +2,8 @@ export class Project {
   constructor(
     private _id: number,
     private _name: string,
-    private _ationYear: number,
-    private _owner?: any[]
+    private _publicationYear: number,
+    private _owner?: string[]
   ) { }
 
 
@@ -13,11 +13,11 @@ export class Project {
   set owner(value: any[]) {
     this._owner = value;
   }
-  get ationYear(): number {
-    return this._ationYear;
+  get publicationYear(): number {
+    return this._publicationYear;
   }
-  set ationYear(value: number) {
-    this._ationYear = value;
+  set publicationYear(value: number) {
+    this._publicationYear = value;
   }
   get name(): string {
     return this._name;
